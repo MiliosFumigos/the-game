@@ -1516,3 +1516,23 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 139, 0, 0.98);
 }
+
+// scroll to top button
+.topButton {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 10;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #f05e1c;
+  background-color: #ffffff;
+  color: #f05e1c;
+  cursor: pointer;
+  &:hover {
+    color: gold;
+    background-color: #f596aa;
+    border: dotted;
+  }
+}

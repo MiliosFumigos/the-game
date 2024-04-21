@@ -19,7 +19,7 @@ import Result1 from "./components/Result1";
 import Result2 from "./components/Result2";
 import Result3 from "./components/Result3";
 import Result4 from "./components/Result4";
-
+import ScrollToTop from "./components/ScrollToTop";
 import "./styles/App.css";
 
 function App() {
@@ -43,6 +43,7 @@ function App() {
         }}
       >
         <HashRouter basename="/">
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Header />}>
               <Route index element={<GameStart />}></Route>
