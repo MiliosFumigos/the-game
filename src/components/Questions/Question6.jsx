@@ -99,7 +99,7 @@ function Question6() {
                 onChange={handdleAnswer}
                 id="option1"
               />
-              <label for="option3">
+              <label for="option1">
                 <div>
                   <img src={icon3} alt="icon" />
                 </div>
