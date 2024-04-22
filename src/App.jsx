@@ -28,6 +28,13 @@ function App() {
   const [finaleResult3, setFinaleResult3] = useState(0);
   const [finaleResult4, setFinaleResult4] = useState(0);
 
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      // behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <ResultContext.Provider
@@ -40,6 +47,7 @@ function App() {
           setFinaleResult3,
           finaleResult4,
           setFinaleResult4,
+          scrollTop,
         }}
       >
         <HashRouter basename="/">

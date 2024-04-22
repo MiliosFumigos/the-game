@@ -20,6 +20,7 @@ function Question10() {
     setFinaleResult3,
     finaleResult4,
     setFinaleResult4,
+    scrollTop,
   } = useContext(ResultContext);
 
   useEffect(() => {
@@ -51,7 +52,7 @@ function Question10() {
   }
 
   function handdleResult() {
-    console.log("OWO");
+    scrollTop();
     if (answer === "pick1") {
       setFinaleResult1(finaleResult1 + 1);
     } else if (answer === "pick2") {

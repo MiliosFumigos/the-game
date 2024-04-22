@@ -20,6 +20,7 @@ function Question5() {
     setFinaleResult3,
     finaleResult4,
     setFinaleResult4,
+    scrollTop,
   } = useContext(ResultContext);
 
   function handdleAnswer(event) {
@@ -27,6 +28,7 @@ function Question5() {
   }
 
   function handdleResult() {
+    scrollTop();
     if (answer === "pick1") {
       setFinaleResult1(finaleResult1 + 1);
     } else if (answer === "pick2") {

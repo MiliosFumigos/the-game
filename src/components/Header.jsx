@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
+import { ResultContext } from "../contexts/ResultContext";
+
 import logo from "../assets/pics/gameLogo.png";
 import chestPic from "../assets/pics/chest.png";
 import openTheChestPic from "../assets/pics/openTheChest.png";
 function Navebar() {
   const [active, setActive] = useState("navMenu");
   const [hamburger, setHamburger] = useState(chestPic);
+
+  const { scrollTop } = useContext(ResultContext);
 
   const navToggle = () => {
     if (active === "navMenu") {
@@ -18,33 +22,42 @@ function Navebar() {
   return (
     <div>
       <nav className="nav">
-        <a href="#" className="navBrand">
+        <div className="navBrand">
           <div className="logoPic">
-            <Link to="/">
+            <Link to="/" onClick={() => scrollTop()}>
               <img src={logo} alt="遊戲清單" />
             </Link>
           </div>
-        </a>
+        </div>
 
         <ul className={active}>
           <li className="navItem">
-            <Link to="Info" className="navLink  navLinkLeft">
+            <Link
+              to="Info"
+              className="navLink  navLinkLeft"
+              onClick={() => scrollTop()}
+            >
               資料來源
             </Link>
           </li>
           <li className="navItem">
-            <Link to="Intro" className="navLink navLinkLeft">
+            <Link
+              to="Intro"
+              className="navLink navLinkLeft"
+              onClick={() => scrollTop()}
+            >
               動物百科
             </Link>
           </li>
 
           <li className="navItem navButton">
-            <Link to="Question1" className="navLink">
+            <Link
+              to="Question1"
+              className="navLink"
+              onClick={() => scrollTop()}
+            >
               <button>開始遊戲</button>
             </Link>
-            {/* <a href="#" className="navLink">
-              <button>遊戲開始</button>
-            </a> */}
           </li>
         </ul>
 
