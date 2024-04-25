@@ -21,7 +21,6 @@ import Result3 from "./components/Result3";
 import Result4 from "./components/Result4";
 import ScrollToTop from "./components/ScrollToTop";
 import LogIn from "./components/LogIn";
-import LogIn from "./components/LogIn";
 import "./styles/App.css";
 
 function App() {

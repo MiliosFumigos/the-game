@@ -20,12 +20,17 @@ function LogIn() {
       <div className="cover">
         <div className="answer">
           <div className="text-area">
-            <label>請輸入你的名稱:</label>
+            <label id="userName">請輸入你的名稱:</label>
 
-            <input type="text" value={inputValue} />
+            <input
+              type="text"
+              value={inputValue}
+              onChange={handleChange}
+              id="userName"
+            />
           </div>
           <div className="btn">
-            <Link to={"/Question1"} onClick={handdleReset}>
+            <Link to={"/Question1"}>
               <button>開始遊戲</button>
             </Link>
             <Link to={"/"} className="backHome">
