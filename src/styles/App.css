@@ -1086,14 +1086,6 @@ body img {
     font-size: 29px;
   }
 }
-.result .resultTop .pic h1 br {
-  display: none;
-}
-@media screen and (max-width: 1400px) {
-  .result .resultTop .pic h1 br {
-    display: block;
-  }
-}
 .result .resultTop .text {
   height: 88vh;
   width: 50vw;

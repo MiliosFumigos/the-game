@@ -1061,12 +1061,12 @@ body {
         @media screen and (max-width: 576px) {
           font-size: 29px;
         }
-        br {
-          display: none;
-          @media screen and (max-width: 1400px) {
-            display: block;
-          }
-        }
+        // br {
+        //   display: none;
+        //   @media screen and (max-width: 1400px) {
+        //     display: block;
+        //   }
+        // }
       }
     }
     .text {

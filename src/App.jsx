@@ -21,6 +21,7 @@ import Result3 from "./components/Result3";
 import Result4 from "./components/Result4";
 import ScrollToTop from "./components/ScrollToTop";
 import LogIn from "./components/LogIn";
+import LogIn from "./components/LogIn";
 import "./styles/App.css";
 
 function App() {
@@ -55,11 +56,13 @@ function App() {
       >
         <HashRouter basename="/">
           <ScrollToTop />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Header />}>
               <Route index element={<GameStart />}></Route>
               <Route path="Info" element={<Info />}></Route>
               <Route path="Intro" element={<Intro />}></Route>
+              <Route path="LogIn" element={<LogIn />}></Route>
               <Route path="LogIn" element={<LogIn />}></Route>
               <Route path="Question1" element={<Question1 />}></Route>
               <Route path="Question2" element={<Question2 />}></Route>
