@@ -71,11 +71,11 @@ body img {
     opacity: 0;
   }
 }
-.nav .navMenu .navItem:nth-child(-n+2) {
+.nav .navMenu .navItem:nth-child(-n + 2) {
   margin-left: 5%;
 }
 @media screen and (max-width: 821px) {
-  .nav .navMenu .navItem:nth-child(-n+2) {
+  .nav .navMenu .navItem:nth-child(-n + 2) {
     margin-left: 0;
   }
 }
@@ -123,12 +123,15 @@ body img {
   font-weight: 800;
   padding: 2px 20px;
   background-color: rgba(0, 170, 0, 0.98);
-  box-shadow: -2.5px 0px rgba(0, 170, 0, 0.8), 2.5px 0px rgba(0, 170, 0, 0.8), 0px 2.5px rgba(0, 170, 0, 0.8), 0px -2.5px rgba(85, 255, 85, 0.7);
+  box-shadow: -2.5px 0px rgba(0, 170, 0, 0.8), 2.5px 0px rgba(0, 170, 0, 0.8),
+    0px 2.5px rgba(0, 170, 0, 0.8), 0px -2.5px rgba(85, 255, 85, 0.7);
   border: none;
 }
 .nav .navMenu .navItem button:hover {
   background-color: rgba(12, 153, 12, 0.98);
-  box-shadow: -2.5px 0px rgba(12, 153, 12, 0.8), 2.5px 0px rgba(12, 153, 12, 0.8), 0px 2.5px rgba(12, 153, 12, 0.8), 0px -2.5px rgba(22, 220, 22, 0.7);
+  box-shadow: -2.5px 0px rgba(12, 153, 12, 0.8),
+    2.5px 0px rgba(12, 153, 12, 0.8), 0px 2.5px rgba(12, 153, 12, 0.8),
+    0px -2.5px rgba(22, 220, 22, 0.7);
   color: lavenderblush;
 }
 @media screen and (max-width: 821px) {
@@ -231,7 +234,8 @@ body img {
   color: #fffffb;
   line-height: 3rem;
   letter-spacing: 1.5px;
-  text-shadow: 1.5px 0px 1px #3c2f41, -1.5px 0px 1px #3c2f41, 0px 1.5px 1px #3c2f41, 0px -1.5px 1px #3c2f41;
+  text-shadow: 1.5px 0px 1px #3c2f41, -1.5px 0px 1px #3c2f41,
+    0px 1.5px 1px #3c2f41, 0px -1.5px 1px #3c2f41;
   text-align: center;
   font-size: 36px;
   animation: bounce 4s infinite linear alternate;
@@ -276,13 +280,15 @@ body img {
   height: 100%;
   border: none;
   background-color: rgba(0, 170, 0, 0.98);
-  box-shadow: -3px 0px rgba(0, 170, 0, 0.8), 3px 0px rgba(0, 170, 0, 0.8), 0px 3px rgba(0, 170, 0, 0.8), 0px -3px rgba(85, 255, 85, 0.7);
+  box-shadow: -3px 0px rgba(0, 170, 0, 0.8), 3px 0px rgba(0, 170, 0, 0.8),
+    0px 3px rgba(0, 170, 0, 0.8), 0px -3px rgba(85, 255, 85, 0.7);
   font-size: 22px;
   letter-spacing: 2px;
 }
 .gameStart .cover .button a button:hover {
   background-color: rgba(46, 92, 110, 0.9);
-  box-shadow: -3px 0px rgba(46, 92, 110, 0.8), 3px 0px rgba(46, 92, 110, 0.8), 0px 3px rgba(46, 92, 110, 0.8), 0px -3px rgba(127, 212, 246, 0.7);
+  box-shadow: -3px 0px rgba(46, 92, 110, 0.8), 3px 0px rgba(46, 92, 110, 0.8),
+    0px 3px rgba(46, 92, 110, 0.8), 0px -3px rgba(127, 212, 246, 0.7);
   color: #fcfaf2;
 }
 
@@ -381,7 +387,8 @@ body img {
   color: aliceblue;
   background-color: rgba(151, 121, 134, 0.114);
   transition: 1s ease-in-out;
-  text-shadow: 2px 0px 1.5px #08192d, -2px 0px 1.5px #08192d, 0px 2px 1.5px #08192d, 0px -2px 1.5px #08192d;
+  text-shadow: 2px 0px 1.5px #08192d, -2px 0px 1.5px #08192d,
+    0px 2px 1.5px #08192d, 0px -2px 1.5px #08192d;
   z-index: 2;
 }
 .wrap .answer .container .headline:hover,
@@ -450,8 +457,8 @@ body img {
     width: 80%;
   }
 }
-.wrap .answer .container .answerArea .options input[type=radio],
-.question10 .answer .container .answerArea .options input[type=radio] {
+.wrap .answer .container .answerArea .options input[type="radio"],
+.question10 .answer .container .answerArea .options input[type="radio"] {
   display: none;
 }
 .wrap .answer .container .answerArea .options label,
@@ -514,8 +521,20 @@ body img {
 .question10 .answer .container .answerArea .options label div img {
   height: 100%;
 }
-.wrap .answer .container .answerArea .options input[type=radio]:checked + label,
-.question10 .answer .container .answerArea .options input[type=radio]:checked + label {
+.wrap
+  .answer
+  .container
+  .answerArea
+  .options
+  input[type="radio"]:checked
+  + label,
+.question10
+  .answer
+  .container
+  .answerArea
+  .options
+  input[type="radio"]:checked
+  + label {
   background-color: chocolate;
   color: aliceblue;
   border: none;
@@ -555,7 +574,9 @@ body img {
   font-weight: 800;
   padding: 3px 30px;
   background-color: rgba(251, 226, 81, 0.9);
-  box-shadow: -2.5px 0px rgba(255, 170, 0, 0.8), 2.5px 0px rgba(255, 170, 0, 0.8), 0px 2.5px rgba(255, 170, 0, 0.8), 0px -2.5px rgba(255, 255, 85, 0.7);
+  box-shadow: -2.5px 0px rgba(255, 170, 0, 0.8),
+    2.5px 0px rgba(255, 170, 0, 0.8), 0px 2.5px rgba(255, 170, 0, 0.8),
+    0px -2.5px rgba(255, 255, 85, 0.7);
   border: none;
   transition: 0.1s ease-out;
   text-shadow: 1.5px 1.5px 1px rgba(113, 76, 1, 0.8);
@@ -571,7 +592,9 @@ body img {
 .wrap .answer .container .btnArea a .nextBtn:hover,
 .question10 .answer .container .btnArea a .nextBtn:hover {
   background-color: rgba(255, 170, 0, 0.98);
-  box-shadow: -2.5px 0px rgba(249, 191, 69, 0.8), 2.5px 0px rgba(249, 191, 69, 0.8), 0px 2.5px rgba(249, 191, 69, 0.8), 0px -2.5px rgba(255, 255, 85, 0.7);
+  box-shadow: -2.5px 0px rgba(249, 191, 69, 0.8),
+    2.5px 0px rgba(249, 191, 69, 0.8), 0px 2.5px rgba(249, 191, 69, 0.8),
+    0px -2.5px rgba(255, 255, 85, 0.7);
 }
 .wrap .answer .container .btnArea a .nextBtn:hover a,
 .question10 .answer .container .btnArea a .nextBtn:hover a {
@@ -697,9 +720,9 @@ body img {
   padding: 10px;
   margin: 0px 0px 10px;
   -moz-column-count: 2;
-       column-count: 2;
+  column-count: 2;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   z-index: 2;
   position: relative;
   text-align: justify;
@@ -707,7 +730,7 @@ body img {
 @media screen and (max-width: 992px) {
   .info .second .container .item {
     -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
 }
 .info .second .container .item p {
@@ -745,7 +768,29 @@ body img {
   left: 50%;
   border-radius: 50%;
   transform: translateY(-50%) translateX(-30%);
-  box-shadow: 155px -10px 0px -30px rgb(243, 213, 175), 300px -10px 0px 10px rgb(243, 213, 175), 450px 0px 0px -10px rgb(243, 213, 175), 600px 20px 0px -5px rgb(243, 213, 175), 700px 20px 0px 0px rgb(243, 213, 175), -100px -2px 0px -32px rgb(243, 213, 175), -180px -10px 0px -32px rgb(243, 213, 175), -300px 0px 0px -15px rgb(243, 213, 175), -450px 30px 0px 10px rgb(243, 213, 175), -600px -10px 0px -10px rgb(243, 213, 175), -770px 20px 0px 10px rgb(243, 213, 175), 155px -20px 0px -30px rgba(35, 58, 75, 0.5), 300px -20px 0px 10px rgba(35, 58, 75, 0.5), 450px -10px 0px -10px rgba(35, 58, 75, 0.5), 600px 10px 0px -5px rgba(35, 58, 75, 0.5), 700px 10px 0px 0px rgba(35, 58, 75, 0.5), -100px -12px 0px -32px rgba(35, 58, 75, 0.5), -180px -20px 0px -32px rgba(35, 58, 75, 0.5), -300px -10px 0px -15px rgba(35, 58, 75, 0.5), -450px 20px 0px 10px rgba(35, 58, 75, 0.5), -600px -20px 0px -10px rgba(35, 58, 75, 0.5), -770px 10px 0px 10px rgba(35, 58, 75, 0.5), 0px -10px 0px 0px rgba(35, 58, 75, 0.5);
+  box-shadow: 155px -10px 0px -30px rgb(243, 213, 175),
+    300px -10px 0px 10px rgb(243, 213, 175),
+    450px 0px 0px -10px rgb(243, 213, 175),
+    600px 20px 0px -5px rgb(243, 213, 175),
+    700px 20px 0px 0px rgb(243, 213, 175),
+    -100px -2px 0px -32px rgb(243, 213, 175),
+    -180px -10px 0px -32px rgb(243, 213, 175),
+    -300px 0px 0px -15px rgb(243, 213, 175),
+    -450px 30px 0px 10px rgb(243, 213, 175),
+    -600px -10px 0px -10px rgb(243, 213, 175),
+    -770px 20px 0px 10px rgb(243, 213, 175),
+    155px -20px 0px -30px rgba(35, 58, 75, 0.5),
+    300px -20px 0px 10px rgba(35, 58, 75, 0.5),
+    450px -10px 0px -10px rgba(35, 58, 75, 0.5),
+    600px 10px 0px -5px rgba(35, 58, 75, 0.5),
+    700px 10px 0px 0px rgba(35, 58, 75, 0.5),
+    -100px -12px 0px -32px rgba(35, 58, 75, 0.5),
+    -180px -20px 0px -32px rgba(35, 58, 75, 0.5),
+    -300px -10px 0px -15px rgba(35, 58, 75, 0.5),
+    -450px 20px 0px 10px rgba(35, 58, 75, 0.5),
+    -600px -20px 0px -10px rgba(35, 58, 75, 0.5),
+    -770px 10px 0px 10px rgba(35, 58, 75, 0.5),
+    0px -10px 0px 0px rgba(35, 58, 75, 0.5);
 }
 .info .second::before {
   content: "";
@@ -856,12 +901,14 @@ body img {
   width: 100%;
   border: none;
   background-color: rgba(0, 170, 0, 0.98);
-  box-shadow: -3px 0px rgba(0, 170, 0, 0.8), 3px 0px rgba(0, 170, 0, 0.8), 0px 3px rgba(0, 170, 0, 0.8), 0px -3px rgba(85, 255, 85, 0.7);
+  box-shadow: -3px 0px rgba(0, 170, 0, 0.8), 3px 0px rgba(0, 170, 0, 0.8),
+    0px 3px rgba(0, 170, 0, 0.8), 0px -3px rgba(85, 255, 85, 0.7);
   font-size: 16px;
 }
 .intro .top .card .text a button:hover {
   background-color: rgba(46, 92, 110, 0.9);
-  box-shadow: -3px 0px rgba(46, 92, 110, 0.8), 3px 0px rgba(46, 92, 110, 0.8), 0px 3px rgba(46, 92, 110, 0.8), 0px -3px rgba(127, 212, 246, 0.7);
+  box-shadow: -3px 0px rgba(46, 92, 110, 0.8), 3px 0px rgba(46, 92, 110, 0.8),
+    0px 3px rgba(46, 92, 110, 0.8), 0px -3px rgba(127, 212, 246, 0.7);
   color: #fcfaf2;
 }
 .intro .top .card:hover h2:after {
@@ -873,7 +920,7 @@ body img {
   background-attachment: fixed;
   background-size: cover;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .intro .area .banner {
   min-height: 90vh;
@@ -917,7 +964,13 @@ body img {
   }
 }
 .intro .area1 .banner {
-  background-image: linear-gradient(120deg, #cceb8a, #8aeba9, #10c2ee, transparent 50%);
+  background-image: linear-gradient(
+    120deg,
+    #cceb8a,
+    #8aeba9,
+    #10c2ee,
+    transparent 50%
+  );
 }
 .intro .area1 .banner .banner-text {
   left: 0;
@@ -932,11 +985,13 @@ body img {
 .intro .area1 .banner .banner-text h1 {
   font-size: 40px;
   color: #0c0c0c;
-  text-shadow: -3px 0px 0.8px yellowgreen, 0px 3px 0.8px yellowgreen, 3px 0px 0.8px yellowgreen, 0px -3px 0.8px yellowgreen;
+  text-shadow: -3px 0px 0.8px yellowgreen, 0px 3px 0.8px yellowgreen,
+    3px 0px 0.8px yellowgreen, 0px -3px 0.8px yellowgreen;
 }
 .intro .area1 .banner .banner-text p {
   color: #fcfaf2;
-  text-shadow: -0.6px 0px 0.8px #0c0c0c, 0px 0.6px 0.8px #0c0c0c, 0.6px 0px 0.8px #0c0c0c, 0px -0.6px 0.8px #0c0c0c;
+  text-shadow: -0.6px 0px 0.8px #0c0c0c, 0px 0.6px 0.8px #0c0c0c,
+    0.6px 0px 0.8px #0c0c0c, 0px -0.6px 0.8px #0c0c0c;
 }
 .intro .area2 {
   background-image: url(../assets/pics/introVillager.png);
@@ -949,7 +1004,13 @@ body img {
   }
 }
 .intro .area2 .banner {
-  background: linear-gradient(120deg, transparent 40%, #fedfe1, #fad689, #81c7d4);
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    #fedfe1,
+    #fad689,
+    #81c7d4
+  );
 }
 .intro .area2 .banner .banner-text {
   right: 0;
@@ -964,11 +1025,13 @@ body img {
 .intro .area2 .banner .banner-text h1 {
   font-size: 40px;
   color: coral;
-  text-shadow: -3px 0px 0.8px #43341b, 0px 3px 0.8px #43341b, 3px 0px 0.8px #43341b, 0px -3px 0.8px #43341b;
+  text-shadow: -3px 0px 0.8px #43341b, 0px 3px 0.8px #43341b,
+    3px 0px 0.8px #43341b, 0px -3px 0.8px #43341b;
 }
 .intro .area2 .banner .banner-text p {
   color: #0c0c0c;
-  text-shadow: -0.6px 0px 0.8px #fcfaf2, 0px 0.6px 0.8px #fcfaf2, 0.6px 0px 0.8px #fcfaf2, 0px -0.6px 0.8px #fcfaf2;
+  text-shadow: -0.6px 0px 0.8px #fcfaf2, 0px 0.6px 0.8px #fcfaf2,
+    0.6px 0px 0.8px #fcfaf2, 0px -0.6px 0.8px #fcfaf2;
 }
 .intro .area3 {
   background-image: url(../assets/pics/introWitch.png);
@@ -981,7 +1044,13 @@ body img {
   }
 }
 .intro .area3 .banner {
-  background-image: linear-gradient(120deg, #fac3d0, #ba91cd, #8aa6eb, transparent 50%);
+  background-image: linear-gradient(
+    120deg,
+    #fac3d0,
+    #ba91cd,
+    #8aa6eb,
+    transparent 50%
+  );
 }
 .intro .area3 .banner .banner-text {
   left: 0;
@@ -996,11 +1065,13 @@ body img {
 .intro .area3 .banner .banner-text h1 {
   font-size: 40px;
   color: #0c0c0c;
-  text-shadow: -3px 0px 0.8px lawngreen, 0px 3px 0.8px lawngreen, 3px 0px 0.8px lawngreen, 0px -3px 0.8px lawngreen;
+  text-shadow: -3px 0px 0.8px lawngreen, 0px 3px 0.8px lawngreen,
+    3px 0px 0.8px lawngreen, 0px -3px 0.8px lawngreen;
 }
 .intro .area3 .banner .banner-text p {
   color: #fcfaf2;
-  text-shadow: -0.6px 0px 0.8px #0c0c0c, 0px 0.6px 0.8px #0c0c0c, 0.6px 0px 0.8px #0c0c0c, 0px -0.6px 0.8px #0c0c0c;
+  text-shadow: -0.6px 0px 0.8px #0c0c0c, 0px 0.6px 0.8px #0c0c0c,
+    0.6px 0px 0.8px #0c0c0c, 0px -0.6px 0.8px #0c0c0c;
 }
 .intro .area4 {
   background-image: url(../assets/pics/introPiglin.png);
@@ -1013,7 +1084,13 @@ body img {
   }
 }
 .intro .area4 .banner {
-  background: linear-gradient(120deg, transparent 40%, #d09f89, #ffcb69, #ff9fa6);
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    #d09f89,
+    #ffcb69,
+    #ff9fa6
+  );
 }
 .intro .area4 .banner .banner-text {
   right: 0;
@@ -1028,11 +1105,13 @@ body img {
 .intro .area4 .banner .banner-text h1 {
   font-size: 40px;
   color: gold;
-  text-shadow: -3px 0px 0.8px #43341b, 0px 3px 0.8px #43341b, 3px 0px 0.8px #43341b, 0px -3px 0.8px #43341b;
+  text-shadow: -3px 0px 0.8px #43341b, 0px 3px 0.8px #43341b,
+    3px 0px 0.8px #43341b, 0px -3px 0.8px #43341b;
 }
 .intro .area4 .banner .banner-text p {
   color: #0c0c0c;
-  text-shadow: -0.6px 0px 0.8px #fcfaf2, 0px 0.6px 0.8px #fcfaf2, 0.6px 0px 0.8px #fcfaf2, 0px -0.6px 0.8px #fcfaf2;
+  text-shadow: -0.6px 0px 0.8px #fcfaf2, 0px 0.6px 0.8px #fcfaf2,
+    0.6px 0px 0.8px #fcfaf2, 0px -0.6px 0.8px #fcfaf2;
 }
 
 .result .resultTop {
@@ -1064,7 +1143,8 @@ body img {
   text-align: center;
   color: #fffffb;
   font-size: 50px;
-  text-shadow: -1.6px 0px 0.09px #1c1c1c, 0px 1.6px 0.09px #1c1c1c, 1.6px 0px 0.09px #1c1c1c, 0px -1.6px 0.09px #1c1c1c;
+  text-shadow: -1.6px 0px 0.09px #1c1c1c, 0px 1.6px 0.09px #1c1c1c,
+    1.6px 0px 0.09px #1c1c1c, 0px -1.6px 0.09px #1c1c1c;
   position: absolute;
   left: 0;
   right: 0;
@@ -1084,14 +1164,6 @@ body img {
 @media screen and (max-width: 576px) {
   .result .resultTop .pic h1 {
     font-size: 29px;
-  }
-}
-.result .resultTop .pic h1 br {
-  display: none;
-}
-@media screen and (max-width: 1400px) {
-  .result .resultTop .pic h1 br {
-    display: block;
   }
 }
 .result .resultTop .text {
@@ -1147,7 +1219,8 @@ body img {
 .result .resultTop .text .textHeadline .type {
   font-size: 50px;
   color: rgb(49, 228, 130);
-  text-shadow: -3px 0px 0.8px black, 0px 3px 0.8px black, 3px 0px 0.8px black, 0px -3px 0.8px black;
+  text-shadow: -3px 0px 0.8px black, 0px 3px 0.8px black, 3px 0px 0.8px black,
+    0px -3px 0.8px black;
 }
 @media screen and (max-width: 992px) {
   .result .resultTop .text .textHeadline .type {
@@ -1163,7 +1236,8 @@ body img {
   padding-top: 50px;
   font-size: 40px;
   color: #0b1013;
-  text-shadow: -2px 0px 1px rgb(49, 228, 130), 0px 2px 1px rgb(49, 228, 130), 2px 0px 1px rgb(49, 228, 130), 0px -2px 1px rgb(49, 228, 130);
+  text-shadow: -2px 0px 1px rgb(49, 228, 130), 0px 2px 1px rgb(49, 228, 130),
+    2px 0px 1px rgb(49, 228, 130), 0px -2px 1px rgb(49, 228, 130);
 }
 @media screen and (max-width: 992px) {
   .result .resultTop .text .textHeadline .headline {
@@ -1232,7 +1306,8 @@ body img {
   width: 200px;
   border: none;
   background-color: rgba(0, 170, 0, 0.98);
-  box-shadow: -3px 0px rgba(0, 170, 0, 0.8), 3px 0px rgba(0, 170, 0, 0.8), 0px 3px rgba(0, 170, 0, 0.8), 0px -3px rgba(85, 255, 85, 0.7);
+  box-shadow: -3px 0px rgba(0, 170, 0, 0.8), 3px 0px rgba(0, 170, 0, 0.8),
+    0px 3px rgba(0, 170, 0, 0.8), 0px -3px rgba(85, 255, 85, 0.7);
 }
 @media screen and (max-width: 992px) {
   .result .resultTop .text .discripe button {
@@ -1248,7 +1323,8 @@ body img {
 }
 .result .resultTop .text .discripe button:hover {
   background-color: rgba(46, 92, 110, 0.9);
-  box-shadow: -3px 0px rgba(46, 92, 110, 0.8), 3px 0px rgba(46, 92, 110, 0.8), 0px 3px rgba(46, 92, 110, 0.8), 0px -3px rgba(127, 212, 246, 0.7);
+  box-shadow: -3px 0px rgba(46, 92, 110, 0.8), 3px 0px rgba(46, 92, 110, 0.8),
+    0px 3px rgba(46, 92, 110, 0.8), 0px -3px rgba(127, 212, 246, 0.7);
 }
 .result .resultTop .text .discripe button:hover a {
   color: #fffffb;
@@ -1258,7 +1334,8 @@ body img {
   font-size: 20px;
   font-weight: bold;
   color: #0b1013;
-  text-shadow: -0.2px 0px 0.8px #877f6c, 0px 0.2px 0.8px #877f6c, 0.2px 0px 0.8px #877f6c, 0px -0.2px 0.8px #877f6c;
+  text-shadow: -0.2px 0px 0.8px #877f6c, 0px 0.2px 0.8px #877f6c,
+    0.2px 0px 0.8px #877f6c, 0px -0.2px 0.8px #877f6c;
 }
 @media screen and (max-width: 992px) {
   .result .resultTop .text .discripe button a {
@@ -1359,7 +1436,8 @@ body img {
   padding-bottom: 5px;
   color: #86c166;
   font-size: 30px;
-  text-shadow: -1.6px 0px 0.09px #1c1c1c, 0px 1.6px 0.09px #1c1c1c, 1.6px 0px 0.09px #1c1c1c, 0px -1.6px 0.09px #1c1c1c;
+  text-shadow: -1.6px 0px 0.09px #1c1c1c, 0px 1.6px 0.09px #1c1c1c,
+    1.6px 0px 0.09px #1c1c1c, 0px -1.6px 0.09px #1c1c1c;
 }
 @media screen and (max-width: 992px) {
   .result .square .text h2 {
@@ -1374,7 +1452,8 @@ body img {
 .result .square .text p {
   color: #fffffb;
   font-size: 20px;
-  text-shadow: -1.6px 0px 0.09px #1c1c1c, 0px 1.6px 0.09px #1c1c1c, 1.6px 0px 0.09px #1c1c1c, 0px -1.6px 0.09px #1c1c1c;
+  text-shadow: -1.6px 0px 0.09px #1c1c1c, 0px 1.6px 0.09px #1c1c1c,
+    1.6px 0px 0.09px #1c1c1c, 0px -1.6px 0.09px #1c1c1c;
   padding: 20px;
 }
 @media screen and (max-width: 992px) {
@@ -1398,11 +1477,13 @@ body img {
 }
 .result2 .resultTop .textHeadline .textHeadlineRight .type {
   color: #b54434;
-  text-shadow: -3px 0px 0.8px #0c0c0c, 0px 3px 0.8px #0c0c0c, 3px 0px 0.8px #0c0c0c, 0px -3px 0.8px #0c0c0c;
+  text-shadow: -3px 0px 0.8px #0c0c0c, 0px 3px 0.8px #0c0c0c,
+    3px 0px 0.8px #0c0c0c, 0px -3px 0.8px #0c0c0c;
 }
 .result2 .resultTop .textHeadline .textHeadlineRight .headline {
   color: #cb1b45;
-  text-shadow: -2px 0px 1px #fffffb, 0px 2px 1px #fffffb, 2px 0px 1px #fffffb, 0px -2px 1px #fffffb;
+  text-shadow: -2px 0px 1px #fffffb, 0px 2px 1px #fffffb, 2px 0px 1px #fffffb,
+    0px -2px 1px #fffffb;
 }
 .result2 .resultTop .text .discripe p {
   color: #fffffb;
@@ -1410,11 +1491,13 @@ body img {
 }
 .result2 .resultTop .text .discripe button {
   background-color: rgb(199, 128, 45);
-  box-shadow: -3px 0px rgba(199, 128, 45, 0.8), 3px 0px rgba(199, 128, 45, 0.8), 0px 3px rgba(199, 128, 45, 0.8), 0px -3px rgba(235, 183, 165, 0.7);
+  box-shadow: -3px 0px rgba(199, 128, 45, 0.8), 3px 0px rgba(199, 128, 45, 0.8),
+    0px 3px rgba(199, 128, 45, 0.8), 0px -3px rgba(235, 183, 165, 0.7);
 }
 .result2 .resultTop .text .discripe button:hover {
   background-color: rgb(221, 210, 59);
-  box-shadow: -3px 0px rgba(199, 128, 45, 0.8), 3px 0px rgba(199, 128, 45, 0.8), 0px 3px rgba(199, 128, 45, 0.8), 0px -3px rgba(235, 183, 165, 0.7);
+  box-shadow: -3px 0px rgba(199, 128, 45, 0.8), 3px 0px rgba(199, 128, 45, 0.8),
+    0px 3px rgba(199, 128, 45, 0.8), 0px -3px rgba(235, 183, 165, 0.7);
 }
 .result2 .bottom {
   background-color: #fad689;
@@ -1431,11 +1514,13 @@ body img {
 }
 .result3 .resultTop .textHeadline .textHeadlineRight .type {
   color: slateblue;
-  text-shadow: -3px 0px 0.8px yellowgreen, 0px 3px 0.8px yellowgreen, 3px 0px 0.8px yellowgreen, 0px -3px 0.8px yellowgreen;
+  text-shadow: -3px 0px 0.8px yellowgreen, 0px 3px 0.8px yellowgreen,
+    3px 0px 0.8px yellowgreen, 0px -3px 0.8px yellowgreen;
 }
 .result3 .resultTop .textHeadline .textHeadlineRight .headline {
   color: yellowgreen;
-  text-shadow: -2px 0px 1px darkolivegreen, 0px 2px 1px darkolivegreen, 2px 0px 1px darkolivegreen, 0px -2px 1px darkolivegreen;
+  text-shadow: -2px 0px 1px darkolivegreen, 0px 2px 1px darkolivegreen,
+    2px 0px 1px darkolivegreen, 0px -2px 1px darkolivegreen;
 }
 .result3 .resultTop .text .discripe p {
   color: #fffffb;
@@ -1443,7 +1528,9 @@ body img {
 }
 .result3 .resultTop .text .discripe button {
   background-color: rgb(152, 251, 152);
-  box-shadow: -3px 0px rgba(152, 251, 152, 0.8), 3px 0px rgba(152, 251, 152, 0.8), 0px 3px rgba(152, 251, 152, 0.8), 0px -3px rgba(189, 233, 189, 0.7);
+  box-shadow: -3px 0px rgba(152, 251, 152, 0.8),
+    3px 0px rgba(152, 251, 152, 0.8), 0px 3px rgba(152, 251, 152, 0.8),
+    0px -3px rgba(189, 233, 189, 0.7);
 }
 .result3 .resultTop .text .discripe button:hover {
   background-color: #4a225d;
@@ -1466,18 +1553,21 @@ body img {
 }
 .result4 .resultTop .textHeadline .textHeadlineRight .type {
   color: gold;
-  text-shadow: -3px 0px 0.8px #1c1c1c, 0px 3px 0.8px #1c1c1c, 3px 0px 0.8px #1c1c1c, 0px -3px 0.8px #1c1c1c;
+  text-shadow: -3px 0px 0.8px #1c1c1c, 0px 3px 0.8px #1c1c1c,
+    3px 0px 0.8px #1c1c1c, 0px -3px 0.8px #1c1c1c;
 }
 .result4 .resultTop .textHeadline .textHeadlineRight .headline {
   color: #f8c3cd;
-  text-shadow: -2px 0px 1px #f596aa, 0px 2px 1px #f596aa, 2px 0px 1px #f596aa, 0px -2px 1px #f596aa;
+  text-shadow: -2px 0px 1px #f596aa, 0px 2px 1px #f596aa, 2px 0px 1px #f596aa,
+    0px -2px 1px #f596aa;
 }
 .result4 .resultTop .text .discripe p {
   color: #e98b2a;
 }
 .result4 .resultTop .text .discripe button {
   background-color: rgb(251, 226, 81);
-  box-shadow: -3px 0px rgba(251, 226, 51, 0.8), 3px 0px rgba(251, 226, 51, 0.8), 0px 3px rgba(254, 224, 51, 0.8), 0px -3px rgba(254, 235, 97, 0.7);
+  box-shadow: -3px 0px rgba(251, 226, 51, 0.8), 3px 0px rgba(251, 226, 51, 0.8),
+    0px 3px rgba(254, 224, 51, 0.8), 0px -3px rgba(254, 235, 97, 0.7);
 }
 .result4 .resultTop .text .discripe button:hover {
   background-color: #f596aa;
@@ -1526,4 +1616,313 @@ body img {
   color: gold;
   background-color: #f596aa;
   border: dotted;
-}/*# sourceMappingURL=App.css.map */
+}
+
+.logIn {
+  background-image: url(../assets/pics/backgroundPigGuid.png);
+  background-position-y: 55%;
+  background-position-x: 55%;
+}
+@media screen and (max-width: 1200px) {
+  .logIn {
+    background-position-x: 52%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logIn {
+    background-position-y: 77%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logIn {
+    background-position-x: 51%;
+    background-position-y: 66%;
+  }
+}
+@media screen and (min-height: 1000px) {
+  .logIn {
+    background-size: 300%;
+  }
+}
+.logIn .cover {
+  min-height: 88vh;
+  position: relative;
+}
+.logIn .cover .answer {
+  width: 40%;
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(67, 67, 67, 0.8196078431);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1200px) {
+  .logIn .cover .answer {
+    width: 50%;
+    height: 45%;
+    top: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logIn .cover .answer {
+    width: 80%;
+    height: 30%;
+    top: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logIn .cover .answer {
+    width: 80%;
+    height: 30%;
+    top: 45%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .logIn .cover .answer {
+    height: 40%;
+  }
+}
+@media screen and (min-height: 1000px) {
+  .logIn .cover .answer {
+    height: 30%;
+  }
+}
+.logIn .cover .answer .text-area {
+  width: 60%;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .logIn .cover .answer .text-area {
+    width: 70%;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logIn .cover .answer .text-area {
+    width: 90%;
+    padding-bottom: 25px;
+  }
+}
+.logIn .cover .answer .text-area label {
+  display: block;
+  font-weight: 800;
+  color: #fffffb;
+  margin-bottom: 2px;
+  text-shadow: -2px 0px 1px #1c1c1c, 0px 2px 1px #1c1c1c, 2px 0px 1px #1c1c1c,
+    0px -2px 1px #1c1c1c;
+}
+@media screen and (max-width: 1200px) {
+  .logIn .cover .answer .text-area label {
+    margin-bottom: 10px;
+  }
+}
+.logIn .cover .answer .text-area input {
+  display: block;
+  color: #fffffb;
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: -1px 0px 1px #787878, 0px 1px 1px #787878, 1px 0px 1px #787878,
+    0px -1px 1px #787878;
+  background-color: #1c1c1c;
+  outline: none;
+  height: 80%;
+  width: 100%;
+}
+.logIn .cover .answer .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+}
+@media screen and (max-width: 1200px) {
+  .logIn .cover .answer .btn {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logIn .cover .answer .btn {
+    width: 90%;
+  }
+}
+.logIn .cover .answer .btn a {
+  display: inline-block;
+  width: 100%;
+}
+.logIn .cover .answer .btn a button {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  color: #fffffb;
+  letter-spacing: 2px;
+  background-color: rgba(0, 170, 0, 0.98);
+  box-shadow: -3px 0px rgba(0, 170, 0, 0.8), 3px 0px rgba(0, 170, 0, 0.8),
+    0px 3px rgba(0, 170, 0, 0.8), 0px -3px rgba(85, 255, 85, 0.7);
+}
+.logIn .cover .answer .btn a button:hover {
+  background-color: rgba(46, 92, 110, 0.9);
+  box-shadow: -3px 0px rgba(46, 92, 110, 0.8), 3px 0px rgba(46, 92, 110, 0.8),
+    0px 3px rgba(46, 92, 110, 0.8), 0px -3px rgba(127, 212, 246, 0.7);
+  color: #fffffb;
+}
+@media screen and (max-width: 992px) {
+  .logIn .cover .answer .btn a button {
+    margin-bottom: 5px;
+  }
+}
+.logIn .cover .answer .btn .backHome {
+  text-indent: 0.5rem;
+  margin-top: 12px;
+  color: floralwhite;
+  font-weight: bold;
+  text-shadow: -2px 0px 1px #1c1c1c, 0px 2px 1px #1c1c1c, 2px 0px 1px #1c1c1c,
+    0px -2px 1px #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logIn .cover .question {
+  display: flex;
+  background-color: rgba(224, 218, 212, 0.136);
+  justify-content: center;
+  width: 98%;
+  height: 20vh;
+  border: 4px double rgba(210, 105, 30, 0.547);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.3s 0.1s linear;
+}
+.logIn .cover .question:hover {
+  background-color: rgba(55, 53, 52, 0.136);
+}
+.logIn .cover .question .portrait {
+  height: 153%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(10%, -37%);
+}
+@media screen and (max-width: 992px) {
+  .logIn .cover .question .portrait {
+    height: 120%;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -18%);
+  }
+}
+.logIn .cover .question .portrait img {
+  height: 100%;
+}
+.logIn .cover .question .portrait h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: floralwhite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(32%, -30%);
+  text-shadow: 1.5px 0px 1px firebrick, -1.5px 0px 1px firebrick,
+    0px 1.5px 1px firebrick, 0px -1.5px 1px firebrick;
+}
+@media screen and (max-width: 1200px) {
+  .logIn .cover .question .portrait h3 {
+    font-size: 33px;
+    transform: translate(50%, -15%);
+  }
+}
+@media screen and (max-width: 992px) {
+  .logIn .cover .question .portrait h3 {
+    font-size: 33px;
+    transform: translate(23%, -10%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .logIn .cover .question .portrait h3 {
+    font-size: 16px;
+    bottom: 50%;
+    right: 0;
+    transform: translate(100%, -40%);
+  }
+}
+.logIn .cover .text {
+  width: 50%;
+  height: 100%;
+  color: #fffffb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+@media screen and (max-width: 1200px) {
+  .logIn .cover .text {
+    width: 70%;
+    font-size: 28px;
+    margin-left: 30%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logIn .cover .text {
+    width: 80%;
+    font-size: 28px;
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logIn .cover .text {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 2%;
+    font-size: 14px;
+  }
+}
+.logIn .cover .text br {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .logIn .cover .text br {
+    display: block;
+  }
+}
+.logIn .cover .text p {
+  text-align: center;
+  text-shadow: 1.5px 0px 1px chocolate, -1.5px 0px 1px chocolate,
+    0px 1.5px 1px chocolate, 0px -1.5px 1px chocolate;
+  position: relative;
+}
+.logIn .cover .text p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid chocolate;
+  bottom: 0%;
+  left: 50%;
+  transform: translateY(200%);
+  animation: blink 2.5s infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+} /*# sourceMappingURL=App.css.map */

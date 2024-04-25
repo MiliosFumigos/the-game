@@ -20,6 +20,7 @@ import Result2 from "./components/Result2";
 import Result3 from "./components/Result3";
 import Result4 from "./components/Result4";
 import ScrollToTop from "./components/ScrollToTop";
+import LogIn from "./components/LogIn";
 import "./styles/App.css";
 
 function App() {
@@ -27,13 +28,7 @@ function App() {
   const [finaleResult2, setFinaleResult2] = useState(0);
   const [finaleResult3, setFinaleResult3] = useState(0);
   const [finaleResult4, setFinaleResult4] = useState(0);
-
-  const scrollTop = () => {
-    window.scrollTo({
-      top: 0,
-      // behavior: "smooth",
-    });
-  };
+  const [inputValue, setInputValue] = useState("");
 
   return (
     <div>
@@ -47,16 +42,19 @@ function App() {
           setFinaleResult3,
           finaleResult4,
           setFinaleResult4,
-          scrollTop,
+          inputValue,
+          setInputValue,
         }}
       >
         <HashRouter basename="/">
+          <ScrollToTop />
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Header />}>
               <Route index element={<GameStart />}></Route>
               <Route path="Info" element={<Info />}></Route>
               <Route path="Intro" element={<Intro />}></Route>
+              <Route path="LogIn" element={<LogIn />}></Route>
               <Route path="Question1" element={<Question1 />}></Route>
               <Route path="Question2" element={<Question2 />}></Route>
               <Route path="Question3" element={<Question3 />}></Route>

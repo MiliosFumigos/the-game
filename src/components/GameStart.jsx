@@ -35,7 +35,7 @@ function GameStart() {
           </h1>
         </div>
         <div className="button">
-          <Link to={"/Question1"}>
+          <Link to={"/LogIn"}>
             <button>開始作答!</button>
           </Link>
         </div>
