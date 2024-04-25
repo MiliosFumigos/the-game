@@ -13,6 +13,7 @@ function Result3() {
     setFinaleResult2,
     setFinaleResult3,
     setFinaleResult4,
+    inputValue,
   } = useContext(ResultContext);
 
   function handdleReset() {
@@ -27,7 +28,7 @@ function Result3() {
       <section className="resultTop">
         <div className="pic">
           <h1>
-            咯咯咯
+            咯咯咯 {inputValue}
             <br />
             你有成為女巫的潛力喔!
           </h1>

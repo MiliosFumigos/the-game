@@ -14,6 +14,7 @@ function Result4() {
     setFinaleResult2,
     setFinaleResult3,
     setFinaleResult4,
+    inputValue,
   } = useContext(ResultContext);
 
   function handdleReset() {
@@ -28,7 +29,7 @@ function Result4() {
       <section className="resultTop">
         <div className="pic">
           <h1>
-            別裝了!
+            別裝了!{inputValue}
             <br />
             你就是豬布林本人吧!
           </h1>
