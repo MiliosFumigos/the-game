@@ -51,11 +51,7 @@ function Navebar() {
           </li>
 
           <li className="navItem navButton">
-            <Link
-              to="Question1"
-              className="navLink"
-              onClick={() => scrollTop()}
-            >
+            <Link to="LogIn" className="navLink" onClick={() => scrollTop()}>
               <button>開始遊戲</button>
             </Link>
           </li>

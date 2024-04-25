@@ -28,7 +28,7 @@ function App() {
   const [finaleResult2, setFinaleResult2] = useState(0);
   const [finaleResult3, setFinaleResult3] = useState(0);
   const [finaleResult4, setFinaleResult4] = useState(0);
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState("Steve");
 
   return (
     <div>
