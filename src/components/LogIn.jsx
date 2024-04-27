@@ -43,6 +43,8 @@ function LogIn() {
               <button>開始遊戲</button>
             </Link>
             <ToastContainer
+              className="myToast"
+              toastStyle={{ backgroundColor: "#1c1c1c", color: "#fffffb" }}
               position="top-center"
               autoClose={1530}
               hideProgressBar={false}

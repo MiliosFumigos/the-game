@@ -1665,6 +1665,20 @@ body {
         }
       }
       .btn {
+        .myToast {
+          width: 60%;
+          left: 50%;
+          font-size: 26px;
+          font-weight: bold;
+          color: #fffffb;
+          text-shadow: -1px 0px 1px #1c1c1c, 0px 1px 1px #1c1c1c,
+            1px 0px 1px #1c1c1c, 0px -1px 1px #1c1c1c;
+          transform: translate(-50%, -100%);
+          @media screen and (max-width: 992px) {
+            font-size: 20px;
+            width: 100%;
+          }
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
