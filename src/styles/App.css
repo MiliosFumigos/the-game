@@ -1086,6 +1086,10 @@ body img {
     font-size: 29px;
   }
 }
+.result .resultTop .pic h1 span {
+  color: rgb(49, 228, 130);
+  text-shadow: -3px 0px 0.8px black, 0px 3px 0.8px black, 3px 0px 0.8px black, 0px -3px 0.8px black;
+}
 .result .resultTop .text {
   height: 88vh;
   width: 50vw;
@@ -1388,6 +1392,10 @@ body img {
 .result2 .resultTop .pic {
   background-image: url(../assets/pics/villagerTop.png);
 }
+.result2 .resultTop .pic h1 span {
+  color: #b54434;
+  text-shadow: -3px 0px 0.8px #0c0c0c, 0px 3px 0.8px #0c0c0c, 3px 0px 0.8px #0c0c0c, 0px -3px 0.8px #0c0c0c;
+}
 .result2 .resultTop .textHeadline .textHeadlineRight .type {
   color: #b54434;
   text-shadow: -3px 0px 0.8px #0c0c0c, 0px 3px 0.8px #0c0c0c, 3px 0px 0.8px #0c0c0c, 0px -3px 0.8px #0c0c0c;
@@ -1420,6 +1428,13 @@ body img {
 }
 .result3 .resultTop .pic {
   background-image: url(../assets/pics/witchTop.png);
+}
+.result3 .resultTop .pic h1 {
+  top: 42%;
+}
+.result3 .resultTop .pic h1 span {
+  color: slateblue;
+  text-shadow: -3px 0px 0.8px yellowgreen, 0px 3px 0.8px yellowgreen, 3px 0px 0.8px yellowgreen, 0px -3px 0.8px yellowgreen;
 }
 .result3 .resultTop .textHeadline .textHeadlineRight .type {
   color: slateblue;
@@ -1455,6 +1470,10 @@ body img {
 }
 .result4 .resultTop .pic {
   background-image: url(../assets/pics/piglinTop.png);
+}
+.result4 .resultTop .pic h1 span {
+  color: gold;
+  text-shadow: -3px 0px 0.8px #1c1c1c, 0px 3px 0.8px #1c1c1c, 3px 0px 0.8px #1c1c1c, 0px -3px 0.8px #1c1c1c;
 }
 .result4 .resultTop .textHeadline .textHeadlineRight .type {
   color: gold;
@@ -1635,6 +1654,12 @@ body img {
   outline: none;
   height: 80%;
   width: 100%;
+}
+.logIn .cover .answer .text-area input::-moz-placeholder {
+  text-shadow: none;
+}
+.logIn .cover .answer .text-area input::placeholder {
+  text-shadow: none;
 }
 .logIn .cover .answer .btn {
   display: flex;

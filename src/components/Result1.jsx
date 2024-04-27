@@ -28,7 +28,7 @@ function Result1() {
       <section className="resultTop">
         <div className="pic">
           <h1>
-            恭喜你! {inputValue}
+            恭喜你! <span>{inputValue}</span>
             <br />
             你和苦力怕非常相似喔~
           </h1>

@@ -1061,6 +1061,11 @@ body {
         @media screen and (max-width: 576px) {
           font-size: 29px;
         }
+        span {
+          color: rgb(49, 228, 130);
+          text-shadow: -3px 0px 0.8px black, 0px 3px 0.8px black,
+            3px 0px 0.8px black, 0px -3px 0.8px black;
+        }
         // br {
         //   display: none;
         //   @media screen and (max-width: 1400px) {
@@ -1341,6 +1346,13 @@ body {
     background-color: #90b44b;
     .pic {
       background-image: url(../assets/pics/villagerTop.png);
+      h1 {
+        span {
+          color: #b54434;
+          text-shadow: -3px 0px 0.8px #0c0c0c, 0px 3px 0.8px #0c0c0c,
+            3px 0px 0.8px #0c0c0c, 0px -3px 0.8px #0c0c0c;
+        }
+      }
     }
 
     .textHeadline {
@@ -1396,6 +1408,14 @@ body {
     background-color: chocolate;
     .pic {
       background-image: url(../assets/pics/witchTop.png);
+      h1 {
+        top: 42%;
+        span {
+          color: slateblue;
+          text-shadow: -3px 0px 0.8px yellowgreen, 0px 3px 0.8px yellowgreen,
+            3px 0px 0.8px yellowgreen, 0px -3px 0.8px yellowgreen;
+        }
+      }
     }
 
     .textHeadline {
@@ -1451,6 +1471,13 @@ body {
     background-color: #fad689;
     .pic {
       background-image: url(../assets/pics/piglinTop.png);
+      h1 {
+        span {
+          color: gold;
+          text-shadow: -3px 0px 0.8px #1c1c1c, 0px 3px 0.8px #1c1c1c,
+            3px 0px 0.8px #1c1c1c, 0px -3px 0.8px #1c1c1c;
+        }
+      }
     }
 
     .textHeadline {
@@ -1632,6 +1659,9 @@ body {
           outline: none;
           height: 80%;
           width: 100%;
+        }
+        input::placeholder {
+          text-shadow: none;
         }
       }
       .btn {

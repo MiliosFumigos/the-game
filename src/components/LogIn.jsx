@@ -3,6 +3,8 @@ import { RiArrowGoBackFill } from "react-icons/ri";
 import piGuid from "../assets/pics/piGuidPor.png";
 import { Link } from "react-router-dom";
 import { ResultContext } from "../contexts/ResultContext";
+import { ToastContainer, toast, Flip } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function LogIn() {
   const { inputValue, setInputValue } = useContext(ResultContext);
@@ -14,25 +16,45 @@ function LogIn() {
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
+  const handleLink = (e) => {
+    if (inputValue === "") {
+      e.preventDefault();
+      toast("🐷請先輸入文字🐷");
+    }
+  };
 
   return (
     <div className="logIn">
       <div className="cover">
         <div className="answer">
           <div className="text-area">
-            <label id="userName">請輸入你的名稱:</label>
+            <label for="userName">請輸入你的名稱:</label>
 
             <input
               type="text"
               value={inputValue}
               onChange={handleChange}
               id="userName"
+              placeholder="例如:Steve"
             />
           </div>
           <div className="btn">
-            <Link to={"/Question1"}>
+            <Link to={"/Question1"} onClick={handleLink}>
               <button>開始遊戲</button>
             </Link>
+            <ToastContainer
+              position="top-center"
+              autoClose={1530}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+              transition={Flip}
+            />
             <Link to={"/"} className="backHome">
               返回
               <RiArrowGoBackFill />

@@ -28,7 +28,7 @@ function Result2() {
       <section className="resultTop">
         <div className="pic">
           <h1>
-            發現了! {inputValue} <br /> 你就是千變萬化的村民吧!
+            發現了! <span>{inputValue}</span> <br /> 你就是千變萬化的村民吧!
           </h1>
         </div>
 

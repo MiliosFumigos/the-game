@@ -29,7 +29,7 @@ function Result4() {
       <section className="resultTop">
         <div className="pic">
           <h1>
-            別裝了!{inputValue}
+            別裝了!<span>{inputValue}</span>
             <br />
             你就是豬布林本人吧!
           </h1>

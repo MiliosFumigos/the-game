@@ -28,7 +28,7 @@ function Result3() {
       <section className="resultTop">
         <div className="pic">
           <h1>
-            咯咯咯 {inputValue}
+            咯咯咯 <span>{inputValue}</span>
             <br />
             你有成為女巫的潛力喔!
           </h1>
